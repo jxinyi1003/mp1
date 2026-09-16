@@ -4,10 +4,217 @@
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
+        <title>Personal Homepage</title>
     </head>
     <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
+        <header class="site-header" id="home">
+            <nav class="navbar" aria-label="Primary navigation">
+                <a class="brand" href="#home" aria-label="Go to home">JX</a>
+                <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a class="nav-link active" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li><a class="nav-link" href="#projects">Projects</a></li>
+                    <li><a class="nav-link" href="#video">Video</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hero section-inner">
+                <div class="hero-copy">
+                    <p class="eyebrow">CS409 MP1 Portfolio</p>
+                    <h1>Hello, I am Xinyi Jiang.</h1>
+                    <p class="hero-text">
+                        A CS student who loves exploring new technology, traveling to new places, and capturing everyday moments through photography. Always curious, always trying something new.
+                    </p>
+                    <a class="button-link" href="#projects">View Work</a>
+                </div>
+                <img class="profile-photo" src="assets/self.jpg" alt="Portrait of Xinyi Jiang">
+            </div>
+        </header>
+
+        <main>
+            <section class="stripe about-section" id="about">
+                <div class="section-inner split-layout">
+                    <div>
+                        <p class="eyebrow">About</p>
+                        <h2>Curious about technology, people, and the world around me.</h2>
+                    </div>
+                    <div class="about-copy">
+                        <p>
+                            I’m Xinyi Jiang, a Computer Science student at UIUC who enjoys exploring different sides of technology. 
+                            I’m particularly interested in AI agents, front-end design, and data analysis — from building systems that can reason and automate tasks, to designing interfaces that feel intuitive, to finding useful stories hidden in data.
+                            Outside of CS, I’m usually looking for a new experience. I love rock climbing, photography, skiing, and traveling. I enjoy exploring unfamiliar cities, capturing small moments through my camera, and trying things that challenge me in different ways.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stripe skills-section" id="skills">
+                <div class="section-inner">
+                    <p class="eyebrow">Focus Areas</p>
+                    <h2>What I like working on</h2>
+                    <div class="column-grid">
+                        <article>
+                            <span class="card-icon" aria-hidden="true">01</span>
+                            <h3>Frontend Design</h3>
+                            <p>Structured layouts, readable hierarchy, and responsive interfaces.</p>
+                        </article>
+                        <article>
+                            <span class="card-icon" aria-hidden="true">02</span>
+                            <h3>AI Agents</h3>
+                            <p>Designing intelligent systems that can interact with users in natural ways.</p>
+                        </article>
+                        <article>
+                            <span class="card-icon" aria-hidden="true">03</span>
+                            <h3>Data Analysis</h3>
+                            <p>Interpreting complex datasets to uncover patterns and inform decision-making.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stripe gallery-section" id="gallery">
+                <div class="section-inner">
+                    <p class="eyebrow">Gallery</p>
+                    <h2>Moments from my camera roll</h2>
+                    <div class="carousel" aria-label="Photo carousel">
+                        <button class="carousel-btn prev" type="button" aria-label="Previous slide">‹</button>
+                        <div class="carousel-window">
+                            <div class="carousel-track">
+                                <figure class="slide">
+                                    <img src="assets/photo1.jpg" alt="Personal gallery photo one">
+                                    <figcaption>Time in Weeki Wachee in Florida.</figcaption>
+                                </figure>
+                                <figure class="slide">
+                                    <img src="assets/photo2.jpg" alt="Personal gallery photo two">
+                                    <figcaption>Walking along the beach picking up shells.</figcaption>
+                                </figure>
+                                <figure class="slide">
+                                    <img src="assets/photo3.jpg" alt="Personal gallery photo three">
+                                    <figcaption>Hoover dam in Nevada.</figcaption>
+                                </figure>
+                                <figure class="slide">
+                                    <img src="assets/photo4.jpg" alt="Personal gallery photo four">
+                                    <figcaption>A Hawaii memory filled with color, sunlight, and open sky.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <button class="carousel-btn next" type="button" aria-label="Next slide">›</button>
+                    </div>
+                    <div class="carousel-dots" aria-label="Carousel slide indicators"></div>
+                </div>
+            </section>
+
+            <section class="stripe fixed-image-section" aria-label="Favorite place">
+                <div class="section-inner centered-feature">
+                    <div>
+                        <p class="eyebrow">Perspective</p>
+                        <h2>New technology, new places, new experiences — I’m always curious about what’s next.</h2>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stripe projects-section" id="projects">
+                <div class="section-inner">
+                    <p class="eyebrow">Projects</p>
+                    <h2>Selected work and interests</h2>
+                    <div class="project-grid" aria-label="Portfolio projects">
+                        <article class="portfolio-card">
+                            <button class="modal-trigger" type="button" data-modal-target="agent-modal">
+                                <img src="assets/aiagent.png" alt="Campaign page builder agent interface">
+                                <span class="portfolio-overlay" aria-hidden="true">+</span>
+                            </button>
+                            <h3>Campaign Builder Agent</h3>
+                        </article>
+                        <article class="portfolio-card">
+                            <button class="modal-trigger" type="button" data-modal-target="camera-modal">
+                                <img src="assets/camera.jpg" alt="Xinyi taking photos with a camera">
+                                <span class="portfolio-overlay" aria-hidden="true">+</span>
+                            </button>
+                            <h3>Photography</h3>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stripe video-section" id="video">
+                <div class="section-inner video-layout">
+                    <div>
+                        <p class="eyebrow">Video</p>
+                        <h2>Climbing keeps me focused.</h2>
+                        <p>
+                            Rock climbing is one of my favorite ways to reset outside of class.
+                            It asks for patience, problem solving, balance, and trust in small
+                            decisions, which makes every route feel like a physical puzzle.
+                        </p>
+                    </div>
+                    <video class="profile-video" controls poster="assets/city_view.jpg" preload="metadata">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer stripe" id="contact">
+            <div class="section-inner footer-layout">
+                <div>
+                    <p class="eyebrow">Contact</p>
+                    <h2>Let us connect.</h2>
+                    <p>Open to learning, collaborating, and sharing ideas.</p>
+                </div>
+                <div class="social-links" aria-label="Social media links">
+                    <a href="mailto:nicoj2@illinois.edu" aria-label="Email">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M3 6.75A2.75 2.75 0 0 1 5.75 4h12.5A2.75 2.75 0 0 1 21 6.75v10.5A2.75 2.75 0 0 1 18.25 20H5.75A2.75 2.75 0 0 1 3 17.25V6.75Zm2.75-1.25c-.69 0-1.25.56-1.25 1.25v.49l7.5 4.5 7.5-4.5v-.49c0-.69-.56-1.25-1.25-1.25H5.75Zm13.75 3.49-7.11 4.27a.75.75 0 0 1-.78 0L4.5 8.99v8.26c0 .69.56 1.25 1.25 1.25h12.5c.69 0 1.25-.56 1.25-1.25V8.99Z" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/jxinyi1003" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.77.6-3.35-1.18-3.35-1.18-.45-1.15-1.1-1.46-1.1-1.46-.9-.61.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.9.83.09-.64.35-1.08.63-1.33-2.21-.25-4.54-1.1-4.54-4.92 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.05c.85 0 1.71.11 2.51.33 1.9-1.29 2.74-1.02 2.74-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.83-2.33 4.67-4.55 4.92.36.31.67.92.67 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/xinyi-jiang-nico/" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M5.34 8.86H2.67V21h2.67V8.86ZM5.6 5.1A1.53 1.53 0 1 0 2.54 5.1 1.53 1.53 0 0 0 5.6 5.1ZM21.33 14.03c0-3.26-1.74-4.78-4.06-4.78a3.49 3.49 0 0 0-3.14 1.72h-.04V8.86h-2.56V21h2.67v-6c0-1.58.3-3.11 2.26-3.11 1.93 0 1.95 1.81 1.95 3.21V21h2.67v-6.97h.25Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <div class="modal" id="agent-modal" aria-hidden="true" role="dialog" aria-labelledby="agent-title">
+            <div class="modal-backdrop" data-modal-close></div>
+            <div class="modal-panel portfolio-modal-panel">
+                <button class="modal-close" type="button" aria-label="Close modal" data-modal-close>×</button>
+                <h2 id="agent-title">Campaign Builder Agent</h2>
+                <div class="modal-divider" aria-hidden="true"><span></span><strong>★</strong><span></span></div>
+                <img class="modal-image" src="assets/aiagent.png" alt="Campaign page builder agent interface">
+                <p>
+                    I built a campaign page builder agent that helps turn campaign ideas into
+                    structured page content. It combines frontend thinking with AI-assisted
+                    workflow design.
+                </p>
+            </div>
+        </div>
+
+        <div class="modal" id="camera-modal" aria-hidden="true" role="dialog" aria-labelledby="camera-title">
+            <div class="modal-backdrop" data-modal-close></div>
+            <div class="modal-panel portfolio-modal-panel">
+                <button class="modal-close" type="button" aria-label="Close modal" data-modal-close>×</button>
+                <h2 id="camera-title">Photography</h2>
+                <div class="modal-divider" aria-hidden="true"><span></span><strong>★</strong><span></span></div>
+                <img class="modal-image" src="assets/camera.jpg" alt="Xinyi photographing a scene">
+                <p>
+                    Photography helps me slow down and notice light, composition, and small
+                    details. It also shapes the way I think about visual hierarchy on a webpage.
+                </p>
+            </div>
+        </div>
+
     </body>
 </html>
